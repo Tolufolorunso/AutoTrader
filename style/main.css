@@ -1,0 +1,211 @@
+/*gblobal*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Kosugi', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.3;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/*                        wrapper
+-------------------------------------------------------------------*/
+
+/*                        header starts here
+-------------------------------------------------------------------*/
+
+/*linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/
+
+/*linear-gradient(110deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .8) 70%, transparent 30%),*/
+
+.header--main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(245deg, rgba(0, 0, 0, 0.7) 0%, transparent 60%, transparent 20%), url(../img/car4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    text-transform: capitalize;
+}
+
+/*
+.header--wrapper {
+    max-width: 960px;
+}
+*/
+
+/*
+ ------------------------------------------*/
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    color: #010b0d;
+}
+
+.nav--wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.logo--h2 {
+    color: black;
+}
+
+.logo--auto {
+    color: red;
+}
+
+.navMenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navMenu li {
+    /*    margin: 0.em;*/
+} 
+.navMenu li a{
+    padding: 5px 8px;
+    text-transform: capitalize;
+    color: black;
+        opacity: 0.5;
+
+    transition: all 1s ease;
+}
+
+.navMenu li a:hover{    opacity: 1;
+
+}
+
+
+
+
+.header--main__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.2;
+    padding: 8% 0 0 4%;
+}
+
+.header--main__content h1 {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.header--main__content p {
+    font-size: 1em;
+}
+
+
+.btn--danger {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 0.5em 2em;
+    font-weight: 500;
+    margin: 45px 0 0 0;
+    border: none;
+    border-radius: 35px;
+    transition: all 1s linear;
+}
+
+.btn--danger:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .header--main {
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .header--main__content {
+        padding: 10% 0 0 6%;
+
+    }
+    .header--main__content h1 {
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+
+    .header--main__content p {
+        font-size: 1em;
+    }
+
+}
+
+
+
+/*                        fluid typography
+-------------------------------------------------------------------*/
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px +6 ((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
